@@ -13,6 +13,7 @@ app.use(morgan('tiny'));
 
 // Meta endpoints
 app.use('/', endpoints.ping);
+app.use('/ping', endpoints.ping);
 
 // Route to the business of this platform!
 app.use('/verify/bvn', endpoints.verifyBVN);
