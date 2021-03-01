@@ -26,7 +26,8 @@ const generateNIBSSCredentials = async () => {
 };
 
 const getNIBSSCredentials = async () => {
-  // TODO call generateNIBSSCredentials as few as possible and save certs
+  // TODO call generateNIBSSCredentials as few times as possible
+  // and save certs in memory. E.g save to Redis
   const certs = await generateNIBSSCredentials();
   return certs;
 };

@@ -1,7 +1,7 @@
 import path from 'path';
 import dotenv from 'dotenv';
 
-const configFile = path.join(__dirname, '../../../.env');
+const configFile = path.join(__dirname, '../.env');
 dotenv.config({ path: configFile });
 
 const runServer = async () => {
